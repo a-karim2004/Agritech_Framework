@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agritech App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <!-- Top Bar -->
+    <div id="entete" class="bg-light border-bottom py-2 fixed-top">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="d-flex gap-4">
+                        <span class="text-secondary small">
+                            <i class="far fa-envelope me-2"></i>support@agritech.com
+                        </span>
+                        <span class="text-secondary small">
+                            <i class="fas fa-phone me-2"></i>[00227] 99 98 97 96
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="d-flex align-items-center justify-content-center gap-2">
+                        <img src="./image/favico.png" class="rounded-circle width="40 height="40" class="d-inline-block align-text-top rounded" alt="Logo">
+                        <span class="fw-bold fs-5">Agritech App</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./image/Niger.png" width="32" alt="India">
+                            <span class="fw-bold">NE</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="text-dark"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-facebook fs-5"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-linkedin fs-5"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-instagram fs-5"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-tiktok fs-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            
+
+
+
+    Main Navbar
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 fixed-top" style="top: 55px;">
+        <div class="container-fluid">
+            <div class="row w-100 align-items-center">
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-end-0">
+                            <i class="fas fa-search text-secondary"></i>
+                        </span>
+                        <input type="text" class="form-control shadow-none border-start-0 bg-light" placeholder="Search anything ...">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-semibold" href="./index.html">
+                                Home <i class=""><i class="bi bi-arrow-up-right"></i></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-semibold" href="./formation.html">
+                                Formations <i class=""><i class="bi bi-arrow-up-right"></i></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-semibold" href="#">
+                                Météo <i class=""><i class="bi bi-arrow-up-right"></i></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-semibold" href="#">
+                                Indicateurs <i class=""><i class="bi bi-arrow-up-right"></i></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-end">
+                  <a href="./deco.html">
+                      <button class="btn btn-success rounded-pill px-4 py-2 fw-bold">
+                        Connect <i class="bi bi-box-arrow-in-left"></i>
+                    </button>
+                  </a>
+                </div>
+            </div>
+            
+        </div>
+    </nav><br><br><br><br>
+    <!-- Agritech Banner -->
+    <section class="py-5 ">
+        <div class="container">
+            <div class="position-relative overflow-hidden rounded-4 shadow-lg" style="height: 300px;">
+                <img src="./image/Home Carroussel.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Agriculture">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center" style="background: rgba(74, 124, 89, 0.4);">
+                     <div class="d-flex justify-content-column text-white">Home > > Nos Formations </div>
+                    <h3 class="display-6 text-white fw-bold">Nos Formations</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Toutes Nos Formations Section -->
+    <section class=" gap-5 ">
+        <div class="container">
+
+
+
+            <h2 class="display-5 fw-bold mb-5">Toutes Nos Formations</h2>
+
+
+
+            <div class="row g-4">
+                <!-- Formation Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-5 d-flex align-items-center">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="./image/Blog-img-1.jpg" class="card-img-top" alt="Formation">
+                            <div class="position-absolute" style="top:85%; left:10%;">
+                                <div class="bg-warning rounded-circle d-flex flex-column align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <h3 class="fw-bold mb-0">10</h3>
+                                    <small class="text-dark">08/2020</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 ">
+                            <span class="badge   text-success  py-2 d-flex align-items-center d-flex justify-content-center">Jardinnage</span>
+                            <h4 class="fw-bold mb-3 d-flex justify-content-center">Lorem dolor</h4>
+                            <p class="text-secondary small mb-3 d-flex justify-content-center">Malika Malikatou</p>
+                            <p class="text-secondary mb-4 d-flex justify-content-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde natus, culpa eius aliquam adipi...
+                            </p>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-secondary small">
+                                   <i class="bi bi-chat-left-dots"></i>7  comments
+                                </span>
+                               <a href="./voir.html">
+                                 <button class="btn btn-success rounded-pill px-4">
+                                    Voir plus <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                                </button>
+                               </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="./image/Blog-img-4.jpg" class="card-img-top" alt="Formation">
+                            <div class="position-absolute" style="top:85%; left:10%;">
+                                <div class="bg-warning rounded-circle d-flex flex-column align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <h3 class="fw-bold mb-0">29</h3>
+                                    <small class="text-dark">09/2019</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-opacity-25 text-success mb-3 px-3 py-2 d-flex justify-content-center ">Contre-Saison</span>
+                            <h4 class="fw-bold mb-3 d-flex justify-content-center">Cras dapibus</h4>
+                            <p class="text-secondary small mb-3 d-flex justify-content-center">Amir Amirou</p>
+                            <p class="text-secondary mb-4 d-flex justify-content-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde natus, culpa eius aliquam adipi...
+                            </p>
+                            <div class="d-flex flex-column justify-content-between align-items-center">
+                                <span class="text-secondary small">
+                                    <i class="far fa-comment me-2 d-flex column"></i>3 comments
+                                </span>
+                               <a href="./voir.html">
+                                 <button class="btn btn-success rounded-pill px-4 d-flex justify-content-center text-decoration-none">
+                                    Voir plus <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                                </button>
+                               </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation Card 3 -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="./image/Blog-img-8.jpg" class="card-img-top" alt="Formation">
+                            <div class="position-absolute"style="top:85%; left:10%;">
+                                <div class="bg-warning rounded-circle d-flex flex-column align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <h3 class="fw-bold mb-0">26</h3>
+                                    <small class="text-dark">07/2019</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge  bg-opacity-25 text-success mb-3 px-3 py-2 d-flex justify-content-center">Jardinnage</span>
+                            <h4 class="fw-bold mb-3 d-flex justify-content-center">Lorem ipsum</h4>
+                            <p class="text-secondary small mb-3 d-flex justify-content-center">Abdou Abdourahmane</p>
+                            <p class="text-secondary mb-4 d-flex justify-content-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde natus, culpa eius aliquam adipi...
+                            </p>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-secondary small">
+                                    <i class="bi bi-chat-left-dots"></i>4 comments
+                                </span>
+                                <a href="./voir.html">
+                                    <button class="btn btn-success rounded-pill px-4">
+                                    Voir plus <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="row g-4">
+                <!-- Formation Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-5 d-flex align-items-center">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="./image/Blog-img-1.jpg" class="card-img-top" alt="Formation">
+                            <div class="position-absolute" style="top:85%; left:10%;">
+                                <div class="bg-warning rounded-circle d-flex flex-column align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <h3 class="fw-bold mb-0">10</h3>
+                                    <small class="text-dark">08/2020</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 ">
+                            <span class="badge   text-success  py-2 d-flex align-items-center d-flex justify-content-center">Jardinnage</span>
+                            <h4 class="fw-bold mb-3 d-flex justify-content-center">Lorem dolor</h4>
+                            <p class="text-secondary small mb-3 d-flex justify-content-center">Malika Malikatou</p>
+                            <p class="text-secondary mb-4 d-flex justify-content-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde natus, culpa eius aliquam adipi...
+                            </p>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-secondary small">
+                                   <i class="bi bi-chat-left-dots"></i>7 comments
+                                </span>
+                               <a href="./voir.html">
+                                 <button class="btn btn-success rounded-pill px-4">
+                                    Voir plus <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                                </button>
+                               </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="./image/Blog-img-4.jpg" class="card-img-top" alt="Formation">
+                            <div class="position-absolute" style="top:85%; left:10%;">
+                                <div class="bg-warning rounded-circle d-flex flex-column align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <h3 class="fw-bold mb-0">29</h3>
+                                    <small class="text-dark">09/2019</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-opacity-25 text-success mb-3 px-3 py-2 d-flex justify-content-center ">Contre-Saison</span>
+                            <h4 class="fw-bold mb-3 d-flex justify-content-center">Cras dapibus</h4>
+                            <p class="text-secondary small mb-3 d-flex justify-content-center">Amir Amirou</p>
+                            <p class="text-secondary mb-4 d-flex justify-content-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde natus, culpa eius aliquam adipi...
+                            </p>
+                            <div class="d-flex flex-column justify-content-between align-items-center">
+                                <span class="text-secondary small">
+                                    <i class="bi bi-chat-left-dots"></i>3 comments
+                                </span>
+                               <a href="./voir.html">
+                                 <button class="btn btn-success rounded-pill px-4 d-flex justify-content-center text-decoration-none">
+                                    Voir plus <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                                </button>
+                               </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation Card 3 -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="./image/Blog-img-8.jpg" class="card-img-top" alt="Formation">
+                            <div class="position-absolute" style="top:85%; left:10%;">
+                                <div class="bg-warning rounded-circle d-flex flex-column align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <h3 class="fw-bold mb-0">26</h3>
+                                    <small class="text-dark">07/2019</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge  bg-opacity-25 text-success mb-3 px-3 py-2 d-flex justify-content-center">Jardinnage</span>
+                            <h4 class="fw-bold mb-3 d-flex justify-content-center">Lorem ipsum</h4>
+                            <p class="text-secondary small mb-3 d-flex justify-content-center">Abdou Abdourahmane</p>
+                            <p class="text-secondary mb-4 d-flex justify-content-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde natus, culpa eius aliquam adipi...
+                            </p>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-secondary small">
+                                   <i class="bi bi-chat-left-dots"></i>4 comments
+                                </span>
+                                <a href="./voir.html">
+                                    <button class="btn btn-success rounded-pill px-4">
+                                    Voir plus <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            
+            <div class="row g-4">
+                <!-- Formation Card 1 -->
+                <div class="col-lg-4 col-md-6 d-flex align-items-center">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="./image/Blog-img-1.jpg" class="card-img-top" alt="Formation">
+                            <div class="position-absolute" style="top:85%; left:10%;">
+                                <div class="bg-warning rounded-circle d-flex flex-column align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <h3 class="fw-bold mb-0">10</h3>
+                                    <small class="text-dark">08/2020</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 ">
+                            <span class="badge   text-success  py-2 d-flex align-items-center d-flex justify-content-center">Jardinnage</span>
+                            <h4 class="fw-bold mb-3 d-flex justify-content-center">Lorem dolor</h4>
+                            <p class="text-secondary small mb-3 d-flex justify-content-center">Malika Malikatou</p>
+                            <p class="text-secondary mb-4 d-flex justify-content-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde natus, culpa eius aliquam adipi...
+                            </p>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-secondary small">
+                                   <i class="bi bi-chat-left-dots"></i></i>7 comments
+                                </span>
+                               <a href="./voir.html">
+                                 <button class="btn btn-success rounded-pill px-4">
+                                    Voir plus <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                                </button>
+                               </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="./image/Blog-img-4.jpg" class="card-img-top" alt="Formation">
+                            <div class="position-absolute" style="top:85%; left:10%;">
+                                <div class="bg-warning rounded-circle d-flex flex-column align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <h3 class="fw-bold mb-0">29</h3>
+                                    <small class="text-dark">09/2019</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-opacity-25 text-success mb-3 px-3 py-2 d-flex justify-content-center ">Contre-Saison</span>
+                            <h4 class="fw-bold mb-3 d-flex justify-content-center">Cras dapibus</h4>
+                            <p class="text-secondary small mb-3 d-flex justify-content-center">Amir Amirou</p>
+                            <p class="text-secondary mb-4 d-flex justify-content-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde natus, culpa eius aliquam adipi...
+                            </p>
+                            <div class="d-flex flex-column justify-content-between align-items-center">
+                                <span class="text-secondary small">
+                                    <i class="far fa-comment me-2 d-flex column"></i>3 comments
+                                </span>
+                               <a href="./voir.html">
+                                 <button class="btn btn-success rounded-pill px-4 d-flex justify-content-center text-decoration-none">
+                                    Voir plus <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                                </button>
+                               </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="./image/Blog-img-8.jpg" class="card-img-top" alt="Formation">
+                            <div class="position-absolute" style="top:85%; left:10%;">
+                                <div class="bg-warning rounded-circle d-flex flex-column align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <h3 class="fw-bold mb-0">26</h3>
+                                    <small class="text-dark">07/2019</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge  bg-opacity-25 text-success mb-3 px-3 py-2 d-flex justify-content-center">Jardinnage</span>
+                            <h4 class="fw-bold mb-3 d-flex justify-content-center">Lorem ipsum</h4>
+                            <p class="text-secondary small mb-3 d-flex justify-content-center">Abdou Abdourahmane</p>
+                            <p class="text-secondary mb-4 d-flex justify-content-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde natus, culpa eius aliquam adipi...
+                            </p>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-secondary small">
+                                   <i class="bi bi-chat-left-dots"></i>4 comments
+                                </span>
+                                <a href="./voir.html">
+                                    <button class="btn btn-success rounded-pill px-4">
+                                    Voir plus <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                <!-- Formation Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-5 d-flex align-items-center">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="./image/Blog-img-1.jpg" class="card-img-top" alt="Formation">
+                            <div class="position-absolute" style="top:85%; left:10%;">
+                                <div class="bg-warning rounded-circle d-flex flex-column align-items-center justify-content-center" style="width: 80px; height: 80px; ">
+                                    <h3 class="fw-bold mb-0">10</h3>
+                                    <small class="text-dark">08/2020</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 ">
+                            <span class="badge   text-success  py-2 d-flex align-items-center d-flex justify-content-center">Jardinnage</span>
+                            <h4 class="fw-bold mb-3 d-flex justify-content-center">Lorem dolor</h4>
+                            <p class="text-secondary small mb-3 d-flex justify-content-center">Malika Malikatou</p>
+                            <p class="text-secondary mb-4 d-flex justify-content-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde natus, culpa eius aliquam adipi...
+                            </p>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-secondary small">
+                                    <i class="bi bi-chat-left-dots"></i>7 comments
+                                </span>
+                               <a href="./voir.html">
+                                 <button class="btn btn-success rounded-pill px-4">
+                                    Voir plus <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                                </button>
+                               </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+
+   
+   
+
+    
+        <br><br><br>
+        <!-- FOOTER -->
+  <footer>
+
+    <!-- Section principale -->
+    <div class="py-5" style="background: linear-gradient(180deg, #ffffff, #e3e3e3);">
+        <div class="row pb-4 mb-4">
+            <div class="col-md-4 ms-auto d-flex flex-row align-items-end gap-5">
+
+                <h5 class="text-nowrap">Join Our Newsletter</h5>
+
+                <div class="input-group mt-3" style="max-width: 480px;">
+                    <input type="email" class="form-control shadow-none" placeholder="Enter your Email">
+                    <button class="btn" style="background:#1d3b17; color:white;">
+                        S'abonner
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row gy-40 container-fluid">
+                
+
+                <!-- Colonne 1 : Logo + texte -->
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="./image/favico.png" alt="logo" width="50" class="me-2">
+                        <h5 class="m-0">Agritech App</h5>
+                    </div>
+                    <p style="font-size:14px;">
+                        Organic farming avoids toxins. Farmers care for soil and grow crops 
+                        that are safe, natural. Farmers care for soil.
+                    </p>
+
+                    <p class="fw-bold mt-3 mb-1">Suivez nous sur :</p>
+
+                    <div class="d-flex gap-3 fs-4">
+                       <i class="bi bi-twitter-x"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-tiktok"></i>
+                    </div>
+                </div>
+
+                
+
+                <!-- Colonne 2 : Liens utiles -->
+                <div class="col-md-2">
+                    <h5>Liens Utiles</h5>
+                    <p>>> Home</p>
+                    <p>>> Formations</p>
+                    <p>>> Météo</p>
+                    <p>>> Indicateurs</p>
+                </div>
+
+                <!-- Colonne 3 : Nos services -->
+                <div class="col-md-2">
+                    <h5>>Nos Services</h5>
+                    <p>>> Home</p>
+                    <p>>> Formations</p>
+                    <p>>> Météo</p>
+                    <p>>> Indicateurs</p>
+                </div>
+                <!-- Colonne 5 : Newsletter (à droite) -->
+                
+
+                <!-- Colonne 4 : Contact -->
+                <div class="col-md-2  ">
+                    <h5>Contactez Nous</h5>
+
+                    <p class="m-0"><i class="bi bi-telephone me-2"></i>Phone:</p>
+                    <p>(00227) 99 98 97 96</p>
+
+                    <p class="m-0"><i class="bi bi-geo-alt me-2"></i>Location:</p>
+                    <p>Niamey, Niger</p>
+
+                    <p class="m-0"><i class="bi bi-envelope me-2"></i>E-mail:</p>
+                    <p>support@agritech.com</p>
+                </div>
+
+                
+            </div>
+        </div>
+     </div>
+
+        <!-- Barre inférieure -->
+        <div style="background:#1d3b17; color:white;" class=" py-4 px-3">
+            © 2025 Codeloccol, All Rights Reserved
+        </div>
+ </footer>
+
+   <!-- MENU_TOGLLE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+     <nav class="navbar bg-body-tertiary fixed-top d-md-none" >
+    <div class="container-fluid d-flex justify-content-between d-md-none ">
+         <div class="col-md-4 text-center">
+                    <div class="d-flex align-items-center justify-content-center gap-2">
+                        <img src="./image/favico.png" class="rounded-circle width="40 height="40" class="d-inline-block align-text-top rounded" alt="Logo">
+                        <span class="fw-bold fs-5">Agritech App</span>
+                    </div>
+                </div>
+        <button class="navbar-toggler" type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar ">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- OFFCANVAS MENU -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+
+            <!-- HEADER -->
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title d-flex align-items-center">
+
+                    <img src="./image/favico.png" width="40" height="40" class="rounded-circle me-2">
+                    <span>Agritech Menu</span>
+                </h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <!-- BODY -->
+            <div class="offcanvas-body">
+
+                <!-- BOUTON CONNECT -->
+                <button class="btn w-50 py-2 mb-4" 
+                        style="background:#1d3b17; color:white; border-radius:35px;">
+                    Connect <i class="bi bi-box-arrow-in-right ms-2"></i>
+                </button>
+
+                <hr>
+
+                <!-- MENU LINKS -->
+                 <hr>
+                <ul class="list-unstyled ms-2">
+                    <li class="mb-3">
+                        <a href="./index.html" class="text-decoration-none text-dark fs-5">
+                            Home <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </li>
+
+                    <li class="mb-3">
+                        <a href="./formation.html" class="text-decoration-none text-dark fs-5">
+                            Blogs <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </li>
+
+                    <li class="mb-3">
+                        <a href="#" class="text-decoration-none text-dark fs-5">
+                            Météo <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </li>
+
+                    <li class="mb-3">
+                        <a href="#" class="text-decoration-none text-dark fs-5">
+                            Indicateurs <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <hr class="my-4">
+
+                <!-- SOCIAL LINKS -->
+                <h6 class="fw-bold mb-3">Socials Links:</h6>
+
+                <div class="d-flex align-items-center mb-3 gap-3">
+
+                    <img src="./image/Niger.png" width="32" class="border">
+                    <span class="fw-bold">NE</span>
+
+                    <i class="bi bi-twitter-x fs-4"></i>
+                    <i class="bi bi-facebook fs-4"></i>
+                    <i class="bi bi-linkedin fs-4"></i>
+                    <i class="bi bi-instagram fs-4"></i>
+                    <i class="bi bi-tiktok fs-4"></i>
+
+                </div>
+
+                <!-- EMAIL -->
+                <p>
+                    <i class="bi bi-envelope me-2"></i>
+                    support@agritech.com
+                </p>
+
+                <!-- PHONE -->
+                <p>
+                    <i class="bi bi-telephone me-2"></i>
+                    (00227) 99 98 97 96
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+</body>
+</html>
