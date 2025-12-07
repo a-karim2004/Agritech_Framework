@@ -26,17 +26,17 @@
     overflow: hidden !important;
     border-radius: 0.1rem !important; 
     height: 400px !important;
-    
 }
 
 
-#section_1:hover{
+#section_1:hover {
     transition: all 0.5s ease !important;
     transform: scale(1.1) rotate(8deg) !important;
+    object-fit: cover !important;
+    
+   
 
 }
-
-
 
 /* Style de base */
 .info-box {
@@ -52,6 +52,9 @@
     transition: opacity 0.4s ease, transform 0.4s ease;
     pointer-events: none;           /* Empêche l'interaction avant hover */
 }
+.animation-card {
+   
+}
 
 /* Effet au survol */
 .info-box:hover {
@@ -59,7 +62,7 @@
 }
 
 .info-box:hover .details,
-.info-box:hover .btn-detail {
+.info-box:hover .btn-detail  {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
@@ -96,15 +99,78 @@
     height: 30vh;
 }
 
-.card-img-top:hover{
-    transform: scale(1.2);
+.stop:hover{
+    transform: scale(1.1);
 }
 
 
+/* 1. Survol de l'image : se déclenche lorsque la CARTE (#section) est survolée */
+#section:hover #section_1 {
+    transition: all 0.5s ease !important;
+    /* Conserve la transformation de l'image */
+    transform: scale(1.1) rotate(8deg) !important; 
+}
 
+/* --- Styles de base de la boîte d'information (inchangés) --- */
+
+.info-box {
+    overflow: hidden;
+    height: 90px;                   /* Hauteur initiale */
+    transition: height 0.4s ease;   /* Animation douce */
+}
+
+.info-box .details,
+.info-box .btn-detail {
+    opacity: 0; 
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;           /* Empêche l'interaction avant hover */
+}
+
+/* 2. Effet au survol de la boîte d'information : se déclenche lorsque la CARTE (#section) est survolée */
+#section:hover .info-box {
+    height: 170px !important;       /* Hauteur augmentée */
+}
+
+/* 3. Affichage des détails : se déclenche lorsque la CARTE (#section) est survolée */
+#section:hover .details,
+#section:hover .btn-detail {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Les styles des boutons restent inchangés et ne sont pas basés sur le survol de la carte */
+.btn-detail {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    width: 40%;
+    color: green;
+    border-radius: 10px;
+}
+
+.btn-detail:hover {
+    background-color: #28a745;
+}
+
+/* Si .fauter est une classe que vous utilisez ailleurs */
+.fauter:hover {
+    background-color: #145214 !important;
+}
 
  
-   
+
+.nav-scale a {
+    transition: transform 0.25s ease;   /* Animation douce */
+}
+
+.nav-scale a:hover {
+    transform: scale(1.10);             /* Zoom 10% */
+    color: #1d3b17 !important;          /* (optionnel) changement couleur */
+}
+
+
 
 
 
@@ -132,7 +198,7 @@
 
 .card-custom:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    
 }
 
 .category {
@@ -144,6 +210,13 @@
     color: #2f7a3b;
     font-weight: bold;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .gojo{
+        display: none !important;
+    }
+    
 }
 
 
